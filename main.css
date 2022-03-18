@@ -218,9 +218,8 @@ ul.nav li a {
 }
 
 .col .imgholder {
-  height: 200px;
+  height: 60%;
   width: 100%;
-  background: #333;
   transition: background 0.3s linear;
 }
 
