@@ -34,12 +34,9 @@
   
   /* 開くボタン */
   .btn-open{
-    background: #fff;
     border-radius: 10px;
     color: #fff;
-    padding: 10px;
     cursor: pointer;
-    margin: 10px auto;
     width: 95%;
     text-align: center;
   }
