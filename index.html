@@ -7,6 +7,7 @@
     <link href='style.css' rel='stylesheet' type='text/css'>
     <link href='main.css' rel='stylesheet' type='text/css'>
     <link href='image.css' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script type="text/javascript" src="index.js"></script>
 
     <div class="row">
@@ -64,19 +65,44 @@
                 <h1 class="icon"><img src="images/toraDSC00477_TP_V4.jpg"></h1>
               </div>
               <div class="container_text">
-                <ul>
-                  <li>氏名：藤井優子</li>
-                  <li>居住地：福井県</li>
-                  <li>趣味：音楽鑑賞、ゲーム</li>
-                  <li>好きなもの：猫</li>
-                </ul>
-        
-                <ul>
-                  <li>学歴：仁愛大学　健康栄養学科卒業（2018）</li>
-                  <li>職歴：クスリのアオキ入社(2018)、退職(2021)</li>
-                  <li>退職後、独学でプログラミングを学習、その後スクールに通いながらRubyなどの言語を学びました。</li>
-                  <li>スクール終了後、PHPを学習中です。</li>
-                </ul>
+                <p>福井県出身、県内の大学で栄養学を学び、卒業後にドラッグストアに勤務しました。<br>
+                医療事務と医薬品販売員として約３年間勤め、2021年に退職。<br>
+                プログラミングの仕事に魅力を感じ、独学とスクールを利用して学習を進ました。<br>
+                Webサイトやアプリの作成に興味があり、主にRubyやPHPを学んでいます。</p>
+
+                <p>強み</p>
+                  <div class="hidden_box">
+                      <input type="checkbox" id="label1" />
+                      <label for="label1">「ほしい」を叶える</label>
+                      <div class="hidden_show">
+                        <!--非表示ここから-->     
+                        <p>前職で医薬品の販売接客の経験より、顧客の悩みを聞き出し適切なアドバイスをする力を身につけました。<br>
+                          それを活かし、顧客の「ほしい」を叶えられるようになりたいと思います。</p>
+                        <!--ここまで-->
+                      </div>
+                  </div>
+                
+                <p>ビジョン</p>
+                  <div class="hidden_box">
+                    <input type="checkbox" id="label2" />
+                    <label for="label2">客観的視点</label>
+                    <div class="hidden_show">
+                      <!--非表示ここから-->     
+                      <p>客観的な視点で、ユーザーが使いやすい、見やすいと感じるWebページが作成できるよう努力していきたいです。</p>
+                      <!--ここまで-->
+                    </div>
+                  </div>
+                  <div class="hidden_box">
+                    <input type="checkbox" id="label3" />
+                    <label for="label3">チームリーダーへ</label>
+                    <div class="hidden_show">
+                      <!--非表示ここから-->     
+                      <p>前職でのマネジメント経験を活かし、プロジェクトチームのまとめ役をできるようになりたいです。<br>
+                        マネジメント力と技術力の向上以外にも、メンバーが意見を出しやすい雰囲気づくりなども意識したいです。</p>
+                      <!--ここまで-->
+                    </div>
+                  </div>
+  
               </div>
             </div>
           </div>
@@ -173,70 +199,106 @@
           <div class="container">
             <h1>WORKS</h1>
             <h2>制作物</h2>
-            <div class="col three bg nopad pointer">
-              <div class="imgholder">
-                <div class="pu-box">
-                  <label for="pu-on">
-                    <div class="btn-open">
-                      <img src="images/task_app/task_app_01.png" width="100%" alt="" class="layer-img imgholder">
-                    </div>
-                  </label>
-                  <input type="checkbox" id="pu-on">
-                  <div class="pu">
-                    <label for="pu-on" class="icon-close">×</label>
-                    <!-- ポップアップの中身 -->
-                    <div class="pu-content">
-                      <p>Ruby on Rails タスク管理アプリ<br>
-                      使用言語：Ruby on Rails/HTML/CSS/JavaScript/MySQL/AWS</p>
-                        <p><a href="https://github.com/shimoyake/rails_task_app">GitHub</a></p>
-                        <img src="images/task_app/task_app_01.png" width="100%" alt="" class="layer-img">
-                        <p>トップページ：終日の予定には◯がつきます<br>
-                        上のボタンから新規作成、作成後は表一覧より参照、編集、削除ができます</p>
-                        <img src="images/task_app/task_app_02.png" width="100%" alt="" class="layer-img">
-                        <p>編集画面でタスクを編集できます</p>
-                        <img src="images/task_app/task_app_03.png" width="100%" alt="" class="layer-img">
-                        <p>編集後のタスクを参照できます</p>
-                      <!-- ./ポップアップの中身　ここまで -->
+              <div class="col three bg nopad pointer">
+                <div class="imgholder">
+                  <div class="pu-box">
+                    <label for="pu-on">
+                      <div class="btn-open" data-target="modal01">
+                        <img src="images/task_app/task_app_01.png" width="100%" alt="" class="layer-img imgholder">
+                      </div>
+                    </label>
+                      <input type="checkbox" id="pu-on">
+                      <div class="pu">
+                        <label for="pu-on" class="icon-close">×</label>
+                        <!-- ポップアップの中身 -->
+                        <div class="pu-content">
+                          <p>Ruby on Rails タスク管理アプリ<br>
+                          使用言語：Ruby on Rails/HTML/CSS/JavaScript/MySQL/AWS</p>
+                          <p>スクールの課題で、シンプルなCRUDアプリとして作成しました。<br>
+                          毎日使用することを想定し、ポップな色使いで明るさを出し、シンプルでわかりやすいデザインを意識しました。</p>
+                            <p><a href="https://github.com/shimoyake/rails_task_app">GitHub</a></p>
+                            <img src="images/task_app/task_app_01.png" width="100%" alt="" class="layer-img">
+                            <p>トップページ：終日の予定には◯がつきます<br>
+                            上のボタンから新規作成、作成後は表一覧より参照、編集、削除ができます</p>
+                            <img src="images/task_app/task_app_02.png" width="100%" alt="" class="layer-img">
+                            <p>編集画面でタスクを編集できます</p>
+                            <img src="images/task_app/task_app_03.png" width="100%" alt="" class="layer-img">
+                            <p>編集後のタスクを参照できます</p>
+                          <!-- ./ポップアップの中身　ここまで -->
+                        </div>
                     </div>
                   </div>
                 </div>
+                <h1 class="feature">タスク管理アプリ</h1>
+                <p>Ruby/Ruby on Rails</p>
               </div>
-              <h1 class="feature">タスク管理アプリ</h1>
+
+              <div class="col three bg nopad pointer">
+                <div class="imgholder">
+                  <div class="pu-box">
+                    <label for="pu-on">
+                      <div class="btn-open" data-target="modal02">
+                        <img src="images/travele_app/travele_app_02.png" width="100%" alt="" class="layer-img imgholder">
+                      </div>
+                    </label>
+                      <input type="checkbox" id="pu-on">
+                      <div class="pu">
+                        <label for="pu-on" class="icon-close">×</label>
+                        <!-- ポップアップの中身 -->
+                        <div class="pu-content">
+                            <p>Ruby on Rails 旅館予約サイトアプリ<br>
+                            使用言語：Ruby on Rails/HTML/CSS/JavaScript/MySQL/AWS</p>
+                            <p>スクールの課題で作成しました。複数モデルのリレーションを取り入れ、ログインや検索機能も実装しました。<br>
+                            作成した中で一番作時間がかかりました。リレーションを考慮した設計なども学ぶことができました。</p>
+                            <p><a href="https://github.com/shimoyake/travele_app_2">GitHub</a></p>
+                            <img src="images/travele_app/travele_app_02.png" width="100%" alt="" class="layer-img">
+                            <p>トップページ：エリア、フリーワードでの部屋の検索、人気エリアは画像をクリックして検索ができます</p>
+                            <img src="images/travele_app/travele_app_03.png" width="100%" alt="" class="layer-img">
+                            <p></p>
+                            <img src="images/travele_app/travele_app_04.png" width="100%" alt="" class="layer-img">
+                            <p></p>
+                          <!-- ./ポップアップの中身　ここまで -->
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <h1 class="feature">旅行アプリ</h1>
+                <p>Ruby/Ruby on Rails</p>
+              </div>
+            
+            <div class="col three bg nopad pointer">
+              <div class="imgholder">
+                <div class="pu-box">
+                  <a href="#modal-02">
+                    <img src="images/travele_app/travele_app_02.png" width="100%" alt="" class="layer-img imgholder">
+                  </a>
+                    <div class="modal-wrapper" id="modal-02">
+                      <a href="#!" class="modal-overlay"></a>
+                      <div class="modal-window pu">
+                        <div class="modal-content pu-content">
+                          <!-- ポップアップの中身 -->
+                            <p>Ruby on Rails 旅館予約サイトアプリ<br>
+                              使用言語：Ruby on Rails/HTML/CSS/JavaScript/MySQL/AWS</p>
+                            <p>スクールの課題で作成しました。複数モデルのリレーションを取り入れ、ログインや検索機能も実装しました。<br>
+                              作成した中で一番作時間がかかりました。リレーションを考慮した設計なども学ぶことができました。</p>
+                              <p><a href="https://github.com/shimoyake/travele_app_2">GitHub</a></p>
+                                <img src="images/travele_app/travele_app_02.png" width="100%" alt="" class="layer-img">
+                                <p>トップページ：エリア、フリーワードでの部屋の検索、人気エリアは画像をクリックして検索ができます</p>
+                                <img src="images/travele_app/travele_app_03.png" width="100%" alt="" class="layer-img">
+                                <p></p>
+                                <img src="images/travele_app/travele_app_04.png" width="100%" alt="" class="layer-img">
+                                <p></p>
+                          <!-- ./ポップアップの中身　ここまで -->
+                        </div>
+                        <a href="#!" class="modal-close icon-close">×</a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <h1 class="feature">旅行アプリ</h1>
               <p>Ruby/Ruby on Rails</p>
             </div>
 
-            <div class="col three bg nopad pointer">
-              <div class="imgholder">
-                <div class="pu-box">
-                  <label for="pu-on">
-                    <div class="btn-open">
-                      <img src="images/travele_app/travele_app_02.png" width="80%" alt="" class="layer-img imgholder">
-                    </div>
-                  </label>
-                  <input type="checkbox" id="pu-on">
-                  <div class="pu">
-                    <label for="pu-on" class="icon-close">×</label>
-                    <!-- ポップアップの中身 -->
-                    <div class="pu-content">
-                      <p>Ruby on Rails 旅館予約サイトアプリ<br>
-                      使用言語：Ruby on Rails/HTML/CSS/JavaScript/MySQL/AWS<br>
-                      主な機能：部屋の登録と予約、検索、ユーザー情報の編集など</p>
-                        <p><a href="https://github.com/shimoyake/travele_app_2">GitHub</a></p>
-                        <img src="images/travele_app/travele_app_02.png" width="100%" alt="" class="layer-img">
-                        <p>トップページ：エリア、フリーワードでの部屋の検索、人気エリアは画像をクリックして検索ができます</p>
-                        <img src="images/travele_app/travele_app_03.png" width="100%" alt="" class="layer-img">
-                        <p></p>
-                        <img src="images/travele_app/travele_app_04.png" width="100%" alt="" class="layer-img">
-                        <p></p>
-                      <!-- ./ポップアップの中身　ここまで -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h1 class="feature">旅館予約サイトアプリ</h1>
-              <p>Ruby/Ruby on Rails</p>
-            </div>
-            
             <div class="col three bg nopad pointer">
               
               <div class="imgholder">
@@ -253,18 +315,16 @@
                     <div class="pu-content">
                       <p>シンプルなSNSサイト<br>
                       使用言語：PHP/Laravele/node.js/CSS/MySQL/MAMP/VScode</p>
-                        <p><a href="">GitHub</a></p>
+                      <p>自分用にメモ代わりや短めの日記感覚で使える、シンプルなSNSサイトです。<br>
+                        Twitterをシンプルにしたアプリが欲しかったのでPHPで作りました。</p>
+                        <p><a href="https://github.com/shimoyake/php_sns_site">GitHub</a></p>
                         <img src="images/sns_app/sns_app_01.png" width="100%" alt="" class="layer-img">
-                        <p>シンプルなTwitterをイメージしたSNSサイトです。<br>
-                        ユーザー登録をすると、文章を投稿できます。<br>
-                        PHPを使った簡単なサイトを作りたいと思い作成しました。<br>
-                        自分の投稿のみ閲覧でき、メモ代わりや日記感覚でSNSを使用したいと思いシンプルな仕様にしています。</p>
                       <!-- ./ポップアップの中身　ここまで -->
                     </div>
                   </div>
                 </div>
               </div>
-              <h1 class="feature">SNSアプリ</h1>
+              <h1 class="feature">SNSサイト</h1>
               <p>PHP/Laravel</p>
             </div>
 
@@ -281,9 +341,10 @@
                   <div class="pu">
                     <label for="pu-on" class="icon-close">×</label>
                     <!-- ポップアップの中身 -->
-                    <div class="pu-content">
+                    <div class="pu-content04">
                       <p>プローフィールサイト<br>
                       使用言語：HTML/CSS/JavaScript/AWS</p>
+                      <p>ポートフォリオをまとめるサイトとして作成しました。</p>
                         <p><a href="https://github.com/shimoyake/profile_site">GitHub</a></p>
                         <img src="images/task_app/task_app_01.png" width="100%" alt="" class="layer-img">
                         <p>トップページ：終日の予定には◯がつきます<br>
@@ -300,6 +361,7 @@
               <h1 class="feature">プロフィールサイト</h1>
               <p>HTML/CSS/JavaScript</p>
             </div>
+
             <div class="col three bg nopad pointer">
               <div class="imgholder"></div>
               <h1 class="feature">Wow</h1>
@@ -313,6 +375,32 @@
             <div class="group"></div>
           </div>
         </div>
+
+        <a href="#modal-01">
+          <img src="https://picsum.photos/id/1080/140">
+        </a>
+        <div class="modal-wrapper" id="modal-01">
+          <a href="#!" class="modal-overlay"></a>
+          <div class="modal-window">
+            <div class="modal-content">
+              <img src="https://picsum.photos/id/1080/600" width="100%">
+            </div>
+            <a href="#!" class="modal-close">×</a>
+          </div>
+        </div>
+
+        <a href="#modal-02">
+          <img src="https://picsum.photos/id/1080/140">
+        </a>
+        <div class="modal-wrapper" id="modal-02">
+          <a href="#!" class="modal-overlay"></a>
+          <div class="modal-window">
+            <div class="modal-content">あああ
+              <img src="https://picsum.photos/id/1080/600" width="100%">
+            </div>
+            <a href="#!" class="modal-close">×</a>
+          </div>
+        </div>
         
         
         <div class="section">
@@ -321,6 +409,11 @@
           </div>
         </div>
     </div>
+
+
+
+
+    
 
 </body>
 </html>
