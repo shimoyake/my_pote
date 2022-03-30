@@ -3,6 +3,7 @@
 
 <header class="main_h">
     <meta http-equiv="content-type" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
     <link href='style.css' rel='stylesheet' type='text/css'>
     <link href='main.css' rel='stylesheet' type='text/css'>
@@ -23,20 +24,13 @@
 </header>
 
     <div class="hero">
-    
-        <h1><span>welcome</span><br>My Profile</h1>
-    
-        <div class="mouse">
-            <span></span>
-        </div>
-    
+      <h1><span>welcome</span><br>My Profile</h1>
     </div>
     
     <div class="row content">
-                <div class="hold">
+        <div class="hold">
           <div class="header">
             <div class="container">
-              
               <ul class="nav">
                 <li><a href="#about">ABOUT ME</a></li>
                 <li><a href="#skill">SKILL</a></li>
@@ -49,11 +43,9 @@
         <div class="section">
           <div class="container">
             <h1>WELCOME</h1>
-            <div class=>
               <p>当サイトは、エンジニアを目指す私が制作物をまとめるポートフォリオとして作成しました。
                 <br>自身の経歴、現在のスキル、制作物などをまとめています。
               </p>
-            </div>
           </div>
         </div>
 
@@ -61,9 +53,7 @@
           <div class="container">
             <h1>ABOUT ME</h1>
             <div class="profile">
-              <div class="col four">
-                <h1 class="icon"><img src="images/toraDSC00477_TP_V4.jpg"></h1>
-              </div>
+                <img src="images/toraDSC00477_TP_V4.jpg">
               <div class="container_text">
                 <p>福井県出身、県内の大学で栄養学を学び、卒業後にドラッグストアに勤務しました。<br>
                 医療事務と医薬品販売員として約３年間勤め、2021年に退職。<br>
@@ -90,6 +80,31 @@
                           <!--ここまで-->
                         </div>
                     </div>
+                    <div class="hidden_box">
+                      <input type="checkbox" id="label2" />
+                      <label for="label2">学習意欲</label>
+                      <div class="hidden_show">
+                        <!--非表示ここから-->     
+                        <p>私は新しいことを学ぶことが好きです。<br>
+                        プログラミングの学習を始めたときも、最初は大変でしたが、楽しみながら学ぶことができました。<br>
+                        プログラミングは言語がアップデートされたり、常に学び続けることが必要になります。<br>
+                        大変ではありますが、常に自分も成長できる環境に身を置くことができると考えています。<br>
+                        仕事で役に立つ資格の取得なども積極的に取り組んでいきたいです。</p>
+                        <!--ここまで-->
+                      </div>
+                    </div>
+                    <div class="hidden_box">
+                      <input type="checkbox" id="label3" />
+                      <label for="label3">前向きさ</label>
+                      <div class="hidden_show">
+                        <!--非表示ここから-->     
+                        <p>私は前向きな性格です。<br>
+                        不安に思うことがあっても、前向きに考えるようにしています。<br>
+                        
+                        </p>
+                        <!--ここまで-->
+                      </div>
+                    </div>
                   </div>
               </div>
               
@@ -97,8 +112,8 @@
                 <p class="caption">ビジョン</p>
                   <div class="container_text">
                     <div class="hidden_box">
-                      <input type="checkbox" id="label2" />
-                      <label for="label2">客観的視点</label>
+                      <input type="checkbox" id="label4" />
+                      <label for="label4">客観的視点をもつ</label>
                       <div class="hidden_show">
                         <!--非表示ここから-->     
                         <p>客観的な視点で、ユーザーが使いやすい、見やすいと感じるWebページが作成できるよう努力していきたいです。</p>
@@ -106,8 +121,8 @@
                       </div>
                     </div>
                     <div class="hidden_box">
-                      <input type="checkbox" id="label3" />
-                      <label for="label3">チームリーダーへ</label>
+                      <input type="checkbox" id="label5" />
+                      <label for="label5">チームリーダーへ</label>
                       <div class="hidden_show">
                         <!--非表示ここから-->     
                         <p>前職でのマネジメント経験を活かし、プロジェクトチームのまとめ役をできるようになりたいです。<br>
@@ -153,13 +168,13 @@
                   <dt style="width:60%;">
                     <span class="ub-bar-graph__content">JavaScript</span>
                   </dt>
-                  <dd><span class="ub-bar-graph__value">60%</span></dd>
+                  <dd><span class="ub-bar-graph__value">70%</span></dd>
                 </div>
                 <div>
                   <dt style="width:70%;">
                     <span class="ub-bar-graph__content">Ruby</span>
                   </dt>
-                  <dd><span class="ub-bar-graph__value">70%</span></dd>
+                  <dd><span class="ub-bar-graph__value">80%</span></dd>
                 </div>
                 <div>
                   <dt style="width:60%;">
@@ -172,34 +187,35 @@
                         
             <div class="col three">
               <h1 class="icon side"><img src="https://icongr.am/devicon/html5-plain-wordmark.svg?size=50&color=currentColor"></h1>
-              <h1 class="feature side">HTML/CSS</h1>
-              <p class="side">レスポンシブ含め基本的なコーディングが可能です。</p>
+              <h1 class="feature side langage_line">HTML/CSS</h1>
+              <p class="side">レスポンシブ含め基本的なコーディングが可能です。ユーザー目線で見やすく、使いやすいページ作りを意識しています。</p>
             </div>
             <div class="col three">
               <h1 class="icon side"><img src="https://icongr.am/devicon/javascript-plain.svg?size=50&color=currentColor"></h1>
-              <h1 class="feature side">JavaScript</h1>
-              <p class="side">Wow wow wow wow wow wow wow wow wow wow wow</p>
+              <h1 class="feature side langage_line">JavaScript</h1>
+              <p class="side">Webページで使用される基本的なコーディングが可能です。</p>
             </div>
             <div class="col three">
               <h1 class="icon side"><img src="https://icongr.am/devicon/ruby-plain-wordmark.svg?size=50&color=currentColor"></h1>
-              <h1 class="feature side">Ruby</h1>
-              <p class="side">基本的な機能を実装したWEBアプリ作成が可能です。フレームワークはRuby on Railsを使用しています。</p>
+              <h1 class="feature side langage_line">Ruby</h1>
+              <p class="side">複数リレーションを要するWEBアプリの作成が可能です。フレームワークはRuby on Railsを使用しています。</p>
             </div>
             
             <div class="group margin"></div>
             <div class="col three">
               <h1 class="icon side"><img src="https://icongr.am/devicon/php-plain.svg?size=50&color=currentColor"></h1>
-              <h1 class="feature side">PHP</h1>
-              <p class="side">フレームワークLaravelについて勉強中です。</p>
+              <h1 class="feature side langage_line">PHP</h1>
+              <p class="side">CRUD機能など基本的な機能を実装したWEBアプリの作成が可能です。フレームワークLaravelについて勉強中です。</p>
             </div>
             <div class="col three">
               <h1 class="icon side"><img src="https://icongr.am/devicon/mysql-plain-wordmark.svg?size=50&color=currentColor"></h1>
-              <h1 class="feature side">DB、開発ツール</h1>
-              <p class="side">データベースは主にMySQLを使用しています。開発はVScode、またはAWSのCloud9で開発を行なっています。ローカルでの開発としてDocker勉強中です。</p>
+              <h1 class="feature side langage_line">GitHub</h1>
+              <p class="side">コードはGitHubで管理しています。
+                データベースは主にMySQLを使用しています。開発はVScode、またはAWSのCloud9で開発を行なっています。ローカルでの開発としてDocker勉強中です。</p>
             </div>
             <div class="col three">
               <h1 class="icon side"><img src="https://icongr.am/devicon/github-original-wordmark.svg?size=50&color=currentColor"></h1>
-              <h1 class="feature side">GitHub</h1>
+              <h1 class="feature side langage_line">GitHub</h1>
               <p class="side">個人開発でもチーム開発を意識し、</p>
             </div>
             <div class="group margin"></div>
@@ -267,15 +283,23 @@
                                   <li>スクールの課題でCRUD機能に複数モデルのリレーションを取り入れたサイトを作成しました。</li>
                                   <li>部屋情報の登録、部屋の予約、エリア別とフリーワードでの検索、ユーザープロフィールの登録などができます。</li>
                                   <li>実装した機能：ログイン機能、画像登録、検索機能、CRUD機能、バリデーション機能など</li>
-                                  <li>作成に一番時間がかかった課題です。</li>
+                                  <li>作成に一番時間がかかった課題です。エラー耐性が身につき、対処法なども身につきました。</li>
                                 </ul>
                                 <p><a href="https://github.com/shimoyake/travele_app_2">GitHub</a></p>
                                   <img src="images/travele_app/travele_app_02.png" width="100%" alt="" class="layer-img">
                                   <p>トップページ：エリア、フリーワードでの部屋の検索、人気エリアは画像をクリックして検索ができます</p>
                                   <img src="images/travele_app/travele_app_03.png" width="100%" alt="" class="layer-img">
-                                  <p></p>
+                                  <p>部屋情報登録：必須項目を全て入力すると登録ができます。</p>
+                                  <img src="images/travele_app/travele_app_08.png" width="100%" alt="" class="layer-img">
+                                  <p>登録が完了すると一覧に表示されます。</p>
                                   <img src="images/travele_app/travele_app_04.png" width="100%" alt="" class="layer-img">
-                                  <p></p>
+                                  <p>部屋の予約画面です。</p>
+                                  <img src="images/travele_app/travele_app_05.png" width="100%" alt="" class="layer-img">
+                                  <p>宿泊日数に合わせて料金を計算します。（料金は発生しません）</p>
+                                  <img src="images/travele_app/travele_app_09.png" width="100%" alt="" class="layer-img">
+                                  <p>ユーザーのプロフィール情報の登録が可能です。</p>
+                                  <img src="images/travele_app/travele_app_10.png" width="100%" alt="" class="layer-img">
+                                  <p>メールアドレスなどはアカウント情報から編集可能です。</p>
                             <!-- ./ポップアップの中身　ここまで -->
                           </div>
                           <a href="#!" class="modal-close icon-close">×</a>
@@ -323,25 +347,20 @@
               <div class="col three bg nopad pointer">
                 <div class="imgholder">
                   <div class="pu-box">
-                    <a href="#modal-03">
-                      <img src="images/sns_app/sns_app_01.png" width="100%" alt="" class="layer-img imgholder">
+                    <a href="#modal-04">
+                      <img src="images/profile_app/profile_app_01.png" width="100%" alt="" class="layer-img imgholder">
                     </a>
-                      <div class="modal-wrapper" id="modal-03">
+                      <div class="modal-wrapper" id="modal-04">
                         <a href="#!" class="modal-overlay"></a>
                         <div class="modal-window pu">
                           <div class="modal-content pu-content">
                             <!-- ポップアップの中身 -->
                             <p>プローフィールサイト<br>
-                              使用言語：HTML/CSS/JavaScript/AWS</p>
-                              <p>ポートフォリオをまとめるサイトとして作成しました。</p>
+                              使用言語：HTML/CSS/JavaScript/VScode<br>
+                              レスポンシブ対応：◯</p>
+                              <p>ポートフォリオをまとめるサイトとして作成しました。<br>
+                              </p>
                                 <p><a href="https://github.com/shimoyake/profile_site">GitHub</a></p>
-                                <img src="images/task_app/task_app_01.png" width="100%" alt="" class="layer-img">
-                                <p>トップページ：終日の予定には◯がつきます<br>
-                                上のボタンから新規作成、作成後は表一覧より参照、編集、削除ができます</p>
-                                <img src="images/task_app/task_app_02.png" width="100%" alt="" class="layer-img">
-                                <p>編集画面でタスクを編集できます</p>
-                                <img src="images/task_app/task_app_03.png" width="100%" alt="" class="layer-img">
-                                <p>編集後のタスクを参照できます</p>
                             <!-- ./ポップアップの中身　ここまで -->
                           </div>
                           <a href="#!" class="modal-close icon-close">×</a>
@@ -357,7 +376,8 @@
             <div class="col three bg nopad pointer">
               <div class="imgholder"></div>
               <h1 class="feature">Wow</h1>
-              <p>Wow wow wow</p>
+              <p>Wow wow wow
+              <a href="https://hukuinekomeguri.netlify.app/">公開中のサイトはこちら</a></p>
             </div>
             <div class="col three bg nopad pointer">
               <div class="imgholder"></div>
@@ -368,5 +388,12 @@
           </div>
         </div>
 
+        <div class="section">
+          <div class="footer">
+            <div class="container white"></div>
+          </div>
+        </div>
+
 </body>
 </html>
+

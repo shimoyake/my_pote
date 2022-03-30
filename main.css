@@ -168,6 +168,12 @@ ul.nav li a {
   transition: background 0.25s linear, color 0.25s linear;
 }
 
+.langage_line {
+  padding: 1rem 2rem;
+  border-top: 3px dotted #000;
+  border-bottom: 3px dotted #000;
+}
+
 .col .icon.side {
   position: absolute;
   padding: 0;
@@ -177,22 +183,20 @@ ul.nav li a {
   width: 50px;
 }
 .profile img{
-  height: 200%;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
+  object-fit: cover; 
 }
 .profile{
   margin-bottom: 100px;
   overflow: visible;
   display: flex;
+  align-items: center;
+  text-align: center;
 }
 .container text{
   margin-left: 20px;
-}
-
-.col:hover > .icon {
-  background: #F44336;
-  color: white;
 }
 
 .col:hover > .icon.side {
@@ -278,6 +282,7 @@ h2 {
 .reset:after {
   display: none !important;
 }
+
 /* 
   Slider with Content
 */
@@ -355,7 +360,7 @@ h2 {
   }
 }
 
-@media all and (max-width:450px) {
+@media all and (max-width:480px) {
   .col, .col.four, .col.three, .col.two {
     display: block;
     width: 95%;
